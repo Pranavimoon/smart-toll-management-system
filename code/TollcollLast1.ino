@@ -1,17 +1,16 @@
-
-
+//libraries required
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <HardwareSerial.h>
 #include <ESP32Servo.h>
 
-#define RFID_RX 16  // EM-18 TX to ESP32 RX
-#define RFID_TX 17  // Not used, but required for HardwareSerial
-#define SERVO_PIN 26  // Servo control pin
+#define RFID_RX 16  
+#define RFID_TX 17  
+#define SERVO_PIN 26  
 
 HardwareSerial RFID(1);
 Servo barrierServo;
-LiquidCrystal_I2C lcd(0x27, 16, 2);  // Try 0x3F if 0x27 doesn't work
+LiquidCrystal_I2C lcd(0x27, 16, 2);  
 
 // List of exempted RFID tags
 String exemptedRFIDs[] = {
@@ -31,40 +30,40 @@ void setup() {
   Serial.begin(115200);
   RFID.begin(9600, SERIAL_8N1, RFID_RX, RFID_TX);
   
-  Wire.begin(21, 22);  // Define ESP32 I2C pins: SDA = 21, SCL = 22
+  Wire.begin(21, 22);  
   lcd.init();
   lcd.backlight();
-  resetLCD();  // Ensure LCD starts in a clean state
+  resetLCD();  
 
   barrierServo.attach(SERVO_PIN);
-  barrierServo.write(0);  // Keep barrier in closed position
+  barrierServo.write(0);  
 }
 
 void loop() {
   if (RFID.available()) {
     String rfidTag = RFID.readStringUntil('\n');
     rfidTag.trim();
-    Serial.println("FastTag Scanned: " + rfidTag);  // Debugging message
+    Serial.println("FastTag Scanned: " + rfidTag);  
     displayMessage("FastTag Scanned:", rfidTag);
-    delay(1000);  // Ensure message is visible
+    delay(1000);  
 
     if (isExempted(rfidTag)) {
       Serial.println("Local Vehicle - No Toll Deducted");
       displayMessage("Local Vehicle", "No Toll Deducted");
-      delay(1000); //delay to open barrier after 1 sec of msg display
+      delay(1000); 
       openBarrier();
     } else if (isNonExempted(rfidTag)) {
       Serial.println("Toll Deducted for Global Vehicle!");
       displayMessage("Global Vehicle", "Toll Deducted!");
-      delay(1000); //delay to open barrier after 1 sec of msg display
+      delay(1000); 
       openBarrier();
     } else {
       Serial.println("Non-Tag Vehicle!");
       displayMessage("Non-Tag Vehicle", "Access Denied");
     }
 
-    delay(3000);  // Keep message for 3 seconds
-    resetLCD();   // Reset LCD to default message
+    delay(3000);  
+    resetLCD();   
   }
 }
 
@@ -90,9 +89,9 @@ bool isNonExempted(String tag) {
 
 // Function to open and close the barrier
 void openBarrier() {
-  barrierServo.write(90);  // Open barrier
-  delay(5000);  // Keep it open for 5 seconds
-  barrierServo.write(0);   // Close barrier
+  barrierServo.write(90);  
+  delay(5000);  
+  barrierServo.write(0);   
 }
 
 // Function to display messages on the LCD
@@ -102,7 +101,7 @@ void displayMessage(String line1, String line2) {
   lcd.print(line1);
   lcd.setCursor(0, 1);
   lcd.print(line2);
-  delay(1000);  // Ensure the message is displayed
+  delay(1000); 
 }
 
 // Function to reset the LCD to "Toll System Ready"
