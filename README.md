@@ -52,15 +52,8 @@ Built as a mini project for the Department of Electronics & Telecommunication En
 ## System Architecture
 
 ```
-Power Supply
-     │
-     ▼
-RFID Reader (EM-18) ──UART──► ESP32 DevKit V1 ──PWM──► Servo Motor (Barrier)
-                                     │
-                                    I2C
-                                     │
-                                     ▼
-                               16x2 LCD Display
+system_architecture.png
+
 ```
 
 ---
