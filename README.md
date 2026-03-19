@@ -126,7 +126,7 @@ Install these via **Arduino IDE → Library Manager**:
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/smart-toll-management-system.git
+   git clone https://github.com/Pranavimoon/smart-toll-management-system.git
    cd smart-toll-management-system
    ```
 
