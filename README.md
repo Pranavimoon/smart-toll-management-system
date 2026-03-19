@@ -72,7 +72,7 @@ Built as a mini project for the Department of Electronics & Telecommunication En
 
 ## Circuit Diagram
 
-> See `/docs/circuit_diagram.png` for the full schematic.
+> See `circuit_diagram.png` in the root of this repository for the full schematic.
 
 Key connections:
 
