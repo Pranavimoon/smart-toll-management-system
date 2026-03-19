@@ -132,7 +132,7 @@ Install these via **Arduino IDE → Library Manager**:
 
 2. **Open the code**
    ```
-   Open /code/smart_toll_system.ino in Arduino IDE
+   Open /code/TollcollLast1.ino in Arduino IDE
    ```
 
 3. **Install libraries**
