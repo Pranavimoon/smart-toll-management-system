@@ -90,6 +90,18 @@ Key connections:
 
 > See `/demo/` folder for hardware photos.
 
+**Local Vehicle — No Toll Deducted**
+
+<img src="demo/Local vehicle scan.jpeg" width="500"/>
+
+**Global Vehicle — Toll Deducted**
+
+<img src="demo/Global vehicle scan.jpeg" width="500"/>
+
+**Tag Scan Demo**
+
+<img src="demo/Tag scan demo.jpeg" width="500"/>
+
 | Scenario | LCD Output | Gate |
 |----------|-----------|------|
 | Local Vehicle scanned | `Local Vehicle / No Toll Deducted` | Opens |
