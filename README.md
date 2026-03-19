@@ -98,13 +98,13 @@ Key connections:
 
 ## Demo
 
-> See `/demo/` folder for hardware photos and test videos.
+> See `/demo/` folder for hardware photos.
 
 | Scenario | LCD Output | Gate |
 |----------|-----------|------|
-| Local Vehicle scanned | `Local Vehicle / No Toll Deducted` | Opens ✅ |
-| Global Vehicle scanned | `Global Vehicle / Toll Deducted!` | Opens ✅ |
-| Unknown tag | `Non-Tag Vehicle / Access Denied` | Stays closed ❌ |
+| Local Vehicle scanned | `Local Vehicle / No Toll Deducted` | Opens |
+| Global Vehicle scanned | `Global Vehicle / Toll Deducted!` | Opens |
+| Unknown tag | `Non-Tag Vehicle / Access Denied` | Stays closed |
 
 ---
 
