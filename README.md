@@ -52,7 +52,7 @@ Built as a mini project for the Department of Electronics & Telecommunication En
 ## System Architecture
 
 ```
-system_architecture.png
+![System Architecture](system_architecture.png)
 
 ```
 
