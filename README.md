@@ -1,4 +1,4 @@
-# 🚗 Smart Toll Management System
+# Smart Toll Management System
 
 ![Arduino](https://img.shields.io/badge/Platform-ESP32-blue?style=for-the-badge&logo=arduino)
 ![RFID](https://img.shields.io/badge/Technology-RFID-green?style=for-the-badge)
@@ -9,26 +9,23 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [System Architecture](#-system-architecture)
-- [Hardware Components](#-hardware-components)
-- [Circuit Diagram](#-circuit-diagram)
-- [Demo](#-demo)
-- [Libraries Required](#-libraries-required)
-- [Pin Configuration](#-pin-configuration)
-- [How to Run](#-how-to-run)
-- [How It Works](#-how-it-works)
-- [Project Report](#-project-report)
-- [Bill of Materials](#-bill-of-materials)
-- [Team](#-team)
-- [Acknowledgements](#-acknowledgements)
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [System Architecture](#system-architecture)
+- [Hardware Components](#hardware-components)
+- [Circuit Diagram](#circuit-diagram)
+- [Demo](#demo)
+- [Libraries Required](#libraries-required)
+- [Pin Configuration](#pin-configuration)
+- [How to Run](#how-to-run)
+- [How It Works](#how-it-works)
+- [Project Report](#project-report)
 
 ---
 
-## 📖 About the Project
+## About the Project
 
 With the rapid rise of vehicles on Indian roads, traditional toll booths cause massive congestion, fuel wastage, and manual errors. This **Smart Toll Management System** solves that using **RFID technology** and an **ESP32 microcontroller**.
 
@@ -40,19 +37,19 @@ Built as a mini project for the Department of Electronics & Telecommunication En
 
 ---
 
-## ✨ Features
+## Features
 
-- ✅ Automatic RFID tag scanning via EM-18 module
-- ✅ Differentiates local vs. global vs. unregistered vehicles
-- ✅ Servo motor-controlled barrier gate
-- ✅ Real-time LCD status display (I2C)
-- ✅ Cashless & contactless toll collection
-- ✅ Low cost (~₹2050 total BOM)
-- ✅ Expandable: FASTag, cloud, solar power ready
+- Automatic RFID tag scanning via EM-18 module
+- Differentiates local vs. global vs. unregistered vehicles
+- Servo motor-controlled barrier gate
+- Real-time LCD status display (I2C)
+- Cashless and contactless toll collection
+- Low cost (~₹2050 total BOM)
+- Expandable: FASTag, cloud, and solar power ready
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 ```
 Power Supply
@@ -68,7 +65,7 @@ RFID Reader (EM-18) ──UART──► ESP32 DevKit V1 ──PWM──► Servo
 
 ---
 
-## 🔧 Hardware Components
+## Hardware Components
 
 | Component | Specification | Cost (INR) |
 |-----------|--------------|------------|
@@ -83,7 +80,7 @@ RFID Reader (EM-18) ──UART──► ESP32 DevKit V1 ──PWM──► Servo
 
 ---
 
-## 🔌 Circuit Diagram
+## Circuit Diagram
 
 > See `/docs/circuit_diagram.png` for the full schematic.
 
@@ -99,7 +96,7 @@ Key connections:
 
 ---
 
-## 🎥 Demo
+## Demo
 
 > See `/demo/` folder for hardware photos and test videos.
 
@@ -111,7 +108,7 @@ Key connections:
 
 ---
 
-## 📦 Libraries Required
+## Libraries Required
 
 Install these via **Arduino IDE → Library Manager**:
 
@@ -124,7 +121,7 @@ Install these via **Arduino IDE → Library Manager**:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Prerequisites
 - Arduino IDE (v1.8+ or v2.x)
@@ -170,7 +167,7 @@ Install these via **Arduino IDE → Library Manager**:
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. System powers on → LCD shows `Toll Plaza:`
 2. Vehicle approaches → RFID tag scanned by EM-18 reader
@@ -183,7 +180,7 @@ Install these via **Arduino IDE → Library Manager**:
 
 ---
 
-## 📄 Project Report
+## Project Report
 
 The full project report is available at `/docs/Smart_Toll_Management_Report.pdf`
 
@@ -191,50 +188,6 @@ Includes: Literature Survey, System Architecture, PCB Layout, Simulation, Testin
 
 ---
 
-## 💰 Bill of Materials
-
-| Sr. No. | Component | Cost (INR) |
-|---------|-----------|------------|
-| 1 | RFID Module (EM-18) | ₹200 |
-| 2 | ESP32 Microcontroller | ₹450 |
-| 3 | LCD Display (16x2 I2C) | ₹150 |
-| 4 | Passive Components | ₹600 |
-| 5 | Motor Driver + DC Motor | ₹200 |
-| 6 | Power Supply Unit | ₹450 |
-| | **Total** | **₹2050** |
-
----
-
-## 👩‍💻 Team
-
-| Name | Roll No. |
-|------|----------|
-| Pranavi Moon | T400340081 |
-| Shivani Nawade | T400340088 |
-| Arya Newase | T400340089 |
-
-**Guide:** Prof. M. S. Kasar
-**HOD:** Prof. Dr. S. R. Patil
-**Institution:** Bharati Vidyapeeth's College of Engineering for Women, Pune-43
-**Department:** Electronics & Telecommunication Engineering (2024–25)
-
----
-
-## 🙏 Acknowledgements
-
-- Prof. M. S. Kasar — Project Guide
-- Prof. Dr. S. R. Patil — HOD, E&TC
-- Prof. Dr. P. V. Jadhav — Principal, BVCOEW
-- [ESP32Servo Library](https://github.com/madhephaestus/ESP32Servo)
-- [LiquidCrystal_I2C Library](https://github.com/johnrickman/LiquidCrystal_I2C)
-- [RFID Journal](https://www.rfidjournal.com/)
-
----
-
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** — feel free to use, modify, and distribute with attribution.
-
----
-
-*Made with ❤️ by TE E&TC students, BVCOEW Pune — 2024-25*
