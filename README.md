@@ -62,7 +62,7 @@ Built as a mini project for the Department of Electronics & Telecommunication En
 | RFID Module (EM-18) | 125 kHz, 5V DC, 2–5 cm range | ₹200 |
 | Microcontroller | ESP32-WROOM-32, Dual-core, Wi-Fi + BT | ₹450 |
 | LCD Display | 16x2, I2C interface, 5V | ₹150 |
-| Servo Motor | SG90, PWM controlled, 5V | — |
+| Servo Motor | SG90, PWM controlled, 5V | ₹120 |
 | Motor Driver + DC Motor | L298N, gate control | ₹200 |
 | Passive Components | Resistors, LEDs, Capacitors, Transformer, etc. | ₹600 |
 | Power Supply Unit | 12V regulated | ₹450 |
