@@ -170,14 +170,6 @@ Install these via **Arduino IDE → Library Manager**:
 
 ---
 
-## Project Report
-
-The full project report is available at `/docs/Smart_Toll_Management_Report.pdf`
-
-Includes: Literature Survey, System Architecture, PCB Layout, Simulation, Testing Procedure, Performance Analysis, and Conclusion.
-
----
-
 ## License
 
 This project is licensed under the **MIT License** — feel free to use, modify, and distribute with attribution.
